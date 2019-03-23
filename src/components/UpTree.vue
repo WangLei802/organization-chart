@@ -63,12 +63,7 @@ export default {
   justify-content: center;
 }
 
-.icon {
-  width: 30px;
-  font-size: 16px;
-  color: #000000;
-  margin: 0 auto;
-}
+
 
 .tree ul {
   display: flex;
