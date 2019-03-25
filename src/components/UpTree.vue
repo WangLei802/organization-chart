@@ -7,8 +7,8 @@
                 <a class="text">
                   <div v-if="!item.flag">股东</div>
                   <div class="company">{{ item.company }}</div>
-                  <div class="submoney" v-if="item.flag"><span>注册金额：</span>{{ item.Subscription }}<span>万元</span></div>
-                  <div v-if="item.flag"><span>股比：</span>{{ item.gb }}</div>
+                  <!-- <div class="submoney" v-if="item.flag"><span>注册金额：</span>{{ item.Subscription }}<span>万元</span></div>
+                  <div v-if="item.flag"><span>股比：</span>{{ item.gb }}</div> -->
                 </a>
                 <div :class="{'icon':true,'iconfont':true,'icon-icon_roundadd_fill':!item.show,'icon-icon_roundreduce_fil':item.show }" class="pointer" @click = "select(item,index)"></div>
                 <tree v-if = "item.show" :folder = "item.children" :select= "select" ></tree>
