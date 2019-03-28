@@ -4,6 +4,10 @@
       <div class="max_width">
         <ul>
             <li v-for = "(item,index) in folder" :key = "index">
+                <div v-if="hide">
+                  <toptree v-if="item.upChildren" :folder = "item.upChildren" :select = "select" class="top"></toptree>
+                </div>
+                <div v-if="item.icon" :class="{'icon':true,'iconfont':true,'icon-icon_roundadd_fill':!item.up,'icon-icon_roundreduce_fil':item.up }" class="pointer" @click = "sel(item,index)"></div>
                 <a>
                   <div class="center">{{ item.gb }}</div>
                   <div class="company center">{{ item.company }}</div>
