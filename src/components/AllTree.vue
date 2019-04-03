@@ -294,14 +294,6 @@ export default {
                       show: false,
                       flag: true,
                       gb: "10%"
-                    },
-                    {
-                      id: "1-1",
-                      company: "xxx公司2-2",
-                      Subscription: "100",
-                      show: false,
-                      flag: true,
-                      gb: "10%"
                     }
                   ]
                 }
