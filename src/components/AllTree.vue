@@ -21,7 +21,296 @@ export default {
     VueDraggableResizable
   },
   data() {
-    return {}  
+    return {
+      // 缩放比例
+      scale: 1.0,
+      // 宽
+      widt: "190px",
+      // 判断滚轮上下
+      initscroll: 0,
+      // 上树显示隐藏变量
+      hide: false,
+      // 下树
+      tree: [
+        {
+          id: 1,
+          company: "北京蝌蚪集团",
+          up: false,
+          show: false, //控制子集显示
+          flag: false, //判断块里显示元素
+          icon: true, //判断图标元素影藏显示
+          children: [
+            {
+              id: "1-1",
+              company: "xxx公司1",
+              Subscription: "200",
+              show: false,
+              flag: true,
+              icon: false,
+              gb: "20%",
+              children: [
+                {
+                  id: "1-1",
+                  company: "xxx公司1-1",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                },
+                {
+                  id: "1-1",
+                  company: "xxx公司1-2",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                }
+              ]
+            },
+            {
+              id: "1-1",
+              company: "xxx公司2",
+              Subscription: "200",
+              show: false,
+              flag: true,
+              gb: "20%",
+              children: [
+                {
+                  id: "1-1",
+                  company: "xxx公司2-1",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                },
+                {
+                  id: "1-1",
+                  company: "xxx公司2-2",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                }
+              ]
+            },
+            {
+              id: "1-1",
+              company: "xxx公司3",
+              Subscription: "200",
+              show: false,
+              flag: true,
+              gb: "20%",
+              children: [
+                {
+                  id: "1-1",
+                  company: "xxx公司3-1",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                },
+                {
+                  id: "1-1",
+                  company: "xxx公司3-2",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                }
+              ]
+            },
+            {
+              id: "1-1",
+              company: "xxx公司4",
+              Subscription: "200",
+              show: false,
+              flag: true,
+              icon: false,
+              gb: "20%",
+              children: [
+                {
+                  id: "1-1",
+                  company: "xxx公司4-1",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                },
+                {
+                  id: "1-1",
+                  company: "xxx公司4-2",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                }
+              ]
+            },
+            {
+              id: "1-1",
+              company: "xxx公司5",
+              Subscription: "200",
+              show: false,
+              flag: true,
+              icon: false,
+              gb: "20%",
+              children: [
+                {
+                  id: "1-1",
+                  company: "xxx公司5-1",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                },
+                {
+                  id: "1-1",
+                  company: "xxx公司5-2",
+                  Subscription: "100",
+                  show: false,
+                  flag: true,
+                  icon: false,
+                  gb: "10%"
+                }
+              ]
+            }
+          ],
+          upChildren: [
+            {
+              id: 1,
+              company: "北京天鹅公司",
+              show: false,
+              flag: false,
+              up: true,
+              children: [
+                {
+                  id: "1-1",
+                  company: "xxx公司1",
+                  Subscription: "200",
+                  show: false,
+                  flag: true,
+                  gb: "20%",
+                  children: [
+                    {
+                      id: "1-1",
+                      company: "xxx公司1-1",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    },
+                    {
+                      id: "1-1",
+                      company: "xxx公司1-2",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    }
+                  ]
+                },
+                {
+                  id: "1-1",
+                  company: "xxx公司2",
+                  Subscription: "200",
+                  show: false,
+                  flag: true,
+                  gb: "20%",
+                  children: [
+                    {
+                      id: "1-1",
+                      company: "xxx公司2-1",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    },
+                    {
+                      id: "1-1",
+                      company: "xxx公司2-2",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 1,
+              company: "北京蛤蟆公司",
+              show: false,
+              flag: false,
+              up: true,
+              children: [
+                {
+                  id: "1-1",
+                  company: "xxx公司1",
+                  Subscription: "200",
+                  show: false,
+                  flag: true,
+                  gb: "20%",
+                  children: [
+                    {
+                      id: "1-1",
+                      company: "xxx公司1-1",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    },
+                    {
+                      id: "1-1",
+                      company: "xxx公司1-2",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    }
+                  ]
+                },
+                {
+                  id: "1-1",
+                  company: "xxx公司2",
+                  Subscription: "200",
+                  show: false,
+                  flag: true,
+                  gb: "20%",
+                  children: [
+                    {
+                      id: "1-1",
+                      company: "xxx公司2-1",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    },
+                    {
+                      id: "1-1",
+                      company: "xxx公司2-2",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    };
   },
   methods: {},
   filters: {},
