@@ -321,6 +321,16 @@ export default {
         }
       }
     },
+    // 根节点up  iconfont 图标控制
+    sel(data, index) {
+      data.up = !data.up;
+      if (data.up == true) {
+        Bus.$emit("hide", true);
+      } else {
+        Bus.$emit("hide", false);
+      }
+      console.log(data.up);
+    },
   },
   filters: {},
   computed: {},
