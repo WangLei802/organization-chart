@@ -331,6 +331,26 @@ export default {
       }
       console.log(data.up);
     },
+    // 点击iconfont事件
+    select(data, index) {
+      console.log(data.children);
+      let arr = [
+        {
+          id: "1-1",
+          company: "xxx公司5-2",
+          Subscription: "100",
+          show: false,
+          flag: true,
+          icon: false,
+          gb: "10%"
+        }
+      ];
+      this.$set(data, 'children' ,arr);
+      if (data.children) {
+        data.show = !data.show;
+      }
+      console.log(data, index);
+    }
   },
   filters: {},
   computed: {},
