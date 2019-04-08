@@ -345,7 +345,7 @@ export default {
           gb: "10%"
         }
       ];
-      this.$set(data, 'children' ,arr);
+      this.$set(data, "children", arr);
       if (data.children) {
         data.show = !data.show;
       }
@@ -353,7 +353,14 @@ export default {
     }
   },
   filters: {},
-  computed: {},
+  computed: {
+    scaleFun: function() {
+      var scale = this.scale;
+      return {
+        transform: "scale(" + scale + ")"
+      };
+    }
+  },
   props: [],
   watch: {},
   created() {},
