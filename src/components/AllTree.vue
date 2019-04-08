@@ -304,7 +304,24 @@ export default {
       ]
     };
   },
-  methods: {},
+  methods: {
+    // 鼠标滚轮缩放值增减
+    sca(e) {
+      console.log(e);
+      console.log(this.scale);
+      if (e.wheelDelta > this.initscroll) {
+        this.scale = this.scale + 0.1;
+        if (this.scale >= 1.4) {
+          this.scale = 1.4;
+        }
+      } else {
+        this.scale = this.scale - 0.1;
+        if (this.scale <= 0.3) {
+          this.scale = 0.3;
+        }
+      }
+    },
+  },
   filters: {},
   computed: {},
   props: [],
