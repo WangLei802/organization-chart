@@ -19,6 +19,7 @@
 </template>
 
 <script>
+// import Bus from '../assets/js/bus.js'
 export default {
   name: "tree",
   props: ["folder", "select"],
@@ -36,6 +37,7 @@ export default {
 </script>
 
 <style scoped>
+/*Now the CSS*/
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +56,7 @@ export default {
 .max_width {
   width: 100%;
   height: 180px;
+  /* overflow: hidden; */
   transform-origin: 50% 50% 0;
   transform: rotate(180deg);
   display: flex;
