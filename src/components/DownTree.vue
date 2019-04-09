@@ -4,6 +4,7 @@
       <div class="max_width">
         <ul>
             <li v-for = "(item,index) in folder" :key = "index">
+                <!-- 如果不需要一个根节点可将此处v-if去掉 并修改alltree数据格式即可 -->
                 <div v-if="hide">
                   <toptree v-if="item.upChildren" :folder = "item.upChildren" :select = "select" class="top"></toptree>
                 </div>
