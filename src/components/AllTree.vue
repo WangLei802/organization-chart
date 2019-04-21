@@ -25,7 +25,6 @@ export default {
       // 缩放比例
       scale: 1.0,
       // 宽
-      widt: "190px",
       // 判断滚轮上下
       initscroll: 0,
       // 上树显示隐藏变量
@@ -39,151 +38,151 @@ export default {
           show: false, //控制子集显示
           flag: false, //判断块里显示元素
           icon: true, //判断图标元素影藏显示
-          children: [
-            {
-              id: "1-1",
-              company: "xxx公司1",
-              Subscription: "200",
-              show: false,
-              flag: true,
-              icon: false,
-              gb: "20%",
-              children: [
-                {
-                  id: "1-1",
-                  company: "xxx公司1-1",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                },
-                {
-                  id: "1-1",
-                  company: "xxx公司1-2",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                }
-              ]
-            },
-            {
-              id: "1-1",
-              company: "xxx公司2",
-              Subscription: "200",
-              show: false,
-              flag: true,
-              gb: "20%",
-              children: [
-                {
-                  id: "1-1",
-                  company: "xxx公司2-1",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                },
-                {
-                  id: "1-1",
-                  company: "xxx公司2-2",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                }
-              ]
-            },
-            {
-              id: "1-1",
-              company: "xxx公司3",
-              Subscription: "200",
-              show: false,
-              flag: true,
-              gb: "20%",
-              children: [
-                {
-                  id: "1-1",
-                  company: "xxx公司3-1",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                },
-                {
-                  id: "1-1",
-                  company: "xxx公司3-2",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                }
-              ]
-            },
-            {
-              id: "1-1",
-              company: "xxx公司4",
-              Subscription: "200",
-              show: false,
-              flag: true,
-              icon: false,
-              gb: "20%",
-              children: [
-                {
-                  id: "1-1",
-                  company: "xxx公司4-1",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                },
-                {
-                  id: "1-1",
-                  company: "xxx公司4-2",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                }
-              ]
-            },
-            {
-              id: "1-1",
-              company: "xxx公司5",
-              Subscription: "200",
-              show: false,
-              flag: true,
-              icon: false,
-              gb: "20%",
-              children: [
-                {
-                  id: "1-1",
-                  company: "xxx公司5-1",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                },
-                {
-                  id: "1-1",
-                  company: "xxx公司5-2",
-                  Subscription: "100",
-                  show: false,
-                  flag: true,
-                  icon: false,
-                  gb: "10%"
-                }
-              ]
-            }
-          ],
+          // children: [
+          //   {
+          //     id: "1-1",
+          //     company: "xxx公司1",
+          //     Subscription: "200",
+          //     show: false,
+          //     flag: true,
+          //     icon: false,
+          //     gb: "20%",
+          //     children: [
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司1-1",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       },
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司1-2",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       }
+          //     ]
+          //   },
+          //   {
+          //     id: "1-1",
+          //     company: "xxx公司2",
+          //     Subscription: "200",
+          //     show: false,
+          //     flag: true,
+          //     gb: "20%",
+          //     children: [
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司2-1",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       },
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司2-2",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       }
+          //     ]
+          //   },
+          //   {
+          //     id: "1-1",
+          //     company: "xxx公司3",
+          //     Subscription: "200",
+          //     show: false,
+          //     flag: true,
+          //     gb: "20%",
+          //     children: [
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司3-1",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       },
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司3-2",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       }
+          //     ]
+          //   },
+          //   {
+          //     id: "1-1",
+          //     company: "xxx公司4",
+          //     Subscription: "200",
+          //     show: false,
+          //     flag: true,
+          //     icon: false,
+          //     gb: "20%",
+          //     children: [
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司4-1",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       },
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司4-2",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       }
+          //     ]
+          //   },
+          //   {
+          //     id: "1-1",
+          //     company: "xxx公司5",
+          //     Subscription: "200",
+          //     show: false,
+          //     flag: true,
+          //     icon: false,
+          //     gb: "20%",
+          //     children: [
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司5-1",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       },
+          //       {
+          //         id: "1-1",
+          //         company: "xxx公司5-2",
+          //         Subscription: "100",
+          //         show: false,
+          //         flag: true,
+          //         icon: false,
+          //         gb: "10%"
+          //       }
+          //     ]
+          //   }
+          // ],
           upChildren: [
             {
               id: 1,
@@ -294,6 +293,14 @@ export default {
                       show: false,
                       flag: true,
                       gb: "10%"
+                    },
+                    {
+                      id: "1-1",
+                      company: "xxx公司2-2",
+                      Subscription: "100",
+                      show: false,
+                      flag: true,
+                      gb: "10%"
                     }
                   ]
                 }
@@ -321,6 +328,9 @@ export default {
         }
       }
     },
+    // cli(index, e) {
+    //   this.onedata[index].flag = !this.onedata[index].flag;
+    // },
     // 根节点up  iconfont 图标控制
     sel(data, index) {
       data.up = !data.up;
@@ -343,9 +353,18 @@ export default {
           flag: true,
           icon: false,
           gb: "10%"
+        },
+        {
+          id: "1-1",
+          company: "xxx公司5-2",
+          Subscription: "100",
+          show: false,
+          flag: true,
+          icon: false,
+          gb: "10%"
         }
       ];
-      this.$set(data, "children", arr);
+      this.$set(data, 'children' ,arr);
       if (data.children) {
         data.show = !data.show;
       }
@@ -370,9 +389,10 @@ export default {
 
 <style scoped>
 .down {
-  position: absolute;
-  left: 57%;
-  top: 15%;
+  /* position: absolute; */
+  /* left: 57%; */
+  /* top: 15%; */
+  margin-top: 3500px;
 }
 .test {
   width: 100%;
@@ -388,8 +408,9 @@ export default {
   cursor: move;
   border: 1px solid red;
   position: relative;
-  left: -50%;
-  top: -150%;
+  left: -40%;
+  top: -30%;
+  /* top: -150%; */
   /* transform: rotate(180deg); */
   /* transform-origin: 50% 50% 0; */
 }
